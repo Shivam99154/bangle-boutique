@@ -1,0 +1,29 @@
+// font-family: "Jost", Sans-serif;
+
+// header style
+.header-logo-wrap{
+    .hfe-site-logo-img{
+        vertical-align: middle;
+        max-width: 90px;
+    }
+}
+
+@media (max-width: 1024px){
+	.site-navigation-menu{
+        .hfe-nav-menu__layout-horizontal{
+            &.menu-is-active{
+                top: calc(100% + 18px) !important;
+            }
+        }
+    }
+}
+// header style end
+
+
+
+// footer style
+.footer-logo-wrap{
+    img{
+        filter: invert(1) brightness(100) !important;
+    }
+}

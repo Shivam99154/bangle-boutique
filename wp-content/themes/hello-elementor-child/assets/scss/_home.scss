@@ -1,0 +1,118 @@
+// products grid 4
+/*
+.boutique-products-grid{
+    .woocommerce{
+        ul.products{
+            &:before,&:after{
+                display: none;
+            }
+            &.columns-4{
+                grid-template-columns: repeat(4, 1fr);
+            }
+            &.columns-3{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            display: grid;
+            
+            grid-gap: 60px 20px;
+            margin-bottom: 0;
+
+            li{
+                padding: 4px 4px 20px;
+                transition: all 0.3s ease;
+                text-align: center;
+                margin: 0;
+                width: 100% !important;
+                float: none;
+
+                .onsale{
+                    display: none;
+                }
+
+                .woocommerce-LoopProduct-link{
+                    img{
+                        margin: 0;
+                        object-fit: cover;
+                    }
+                }
+
+                .woocommerce-loop-product__title{
+                    font-size: 20px;
+                    font-family: "Jost", Sans-serif;
+                    color: var(--e-global-color-primary);
+                    padding-block: 0;
+                    margin-block: 20px 10px;
+                }
+                .price{
+                    del{
+                        color: var(--e-global-color-secondary);
+                    }
+                    ins{
+                        color: var(--e-global-color-primary);
+                        font-size: 18px;
+                        font-weight: normal;
+                    }
+                }
+                .add_to_cart_button{
+                    font-size: 16px;
+                    background-color: var(--e-global-color-secondary);
+                    padding: 15px 32px;
+                    color: #fff;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                .added_to_cart{
+                    &.wc-forward{
+                        display: block;
+                        color: var(--e-global-color-primary);
+                    }
+                }
+                &:hover{
+                    background-color: var(--e-global-color-c0d75f6);
+                    // background-color: #F8EDEB;                    
+                }
+            }
+        }
+    }
+}
+*/
+// products grid 4
+
+// grid cards
+.grid-cards-wrap{
+    .elementor-image-box-img{
+        display: flex;
+    }
+    .elementor-image-box-content{
+        transform: translateY(100%);
+        transition:  transform 0.3s ease;
+        background-color: rgba(#fff, 0.8);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 12px 20px;
+
+        .elementor-image-box-title{
+            margin-top: 0;
+        }        
+    }
+    .elementor-image-box-wrapper{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .elementor-image-box-content{
+                transform: translateY(0);
+                z-index: 1;
+            }
+        }
+    }
+}
+// end grid cards
+
+.feature-articles{
+    a{
+        text-decoration: none;
+    }
+}

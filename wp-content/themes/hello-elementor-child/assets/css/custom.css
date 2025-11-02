@@ -1,0 +1,216 @@
+.header-logo-wrap .hfe-site-logo-img {
+  vertical-align: middle;
+  max-width: 90px;
+}
+
+@media (max-width: 1024px) {
+  .site-navigation-menu .hfe-nav-menu__layout-horizontal.menu-is-active {
+    top: calc(100% + 18px) !important;
+  }
+}
+.footer-logo-wrap img {
+  filter: invert(1) brightness(100) !important;
+}
+
+.boutique-products-grid .woocommerce ul.products:before, .boutique-products-grid .woocommerce ul.products:after {
+  display: none;
+}
+.boutique-products-grid .woocommerce ul.products.columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.boutique-products-grid .woocommerce ul.products.columns-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.boutique-products-grid .woocommerce ul.products {
+  display: grid;
+  grid-gap: 64px 20px;
+  margin-bottom: 0;
+}
+.boutique-products-grid .woocommerce ul.products li {
+  width: 100% !important;
+  float: none;
+  margin: 0;
+}
+.boutique-products-grid .woocommerce ul.products li .custom-product-wrap .img-wrap img {
+  margin-bottom: 0;
+}
+.boutique-products-grid .woocommerce ul.products li .add_to_cart_button {
+  margin-top: 0;
+}
+
+.custom-product-wrap .img-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.custom-product-wrap .title-price-wrap {
+  padding-block: 16px;
+  display: flex;
+  column-gap: 20px;
+}
+.custom-product-wrap .title-price-wrap .site-product-title {
+  font-family: "Jost", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--e-global-color-primary);
+  margin-block: 0;
+}
+.custom-product-wrap .title-price-wrap .site-product-title a {
+  color: inherit;
+}
+.custom-product-wrap .title-price-wrap .site-product-price {
+  flex: none;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: right;
+}
+.custom-product-wrap .title-price-wrap .site-product-price ins {
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--e-global-color-primary);
+}
+.custom-product-wrap .title-price-wrap .site-product-price del {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--e-global-color-secondary);
+}
+.custom-product-wrap .add-to-cart-wrap .add_to_cart_button {
+  width: 100%;
+  font-size: 16px;
+  background-color: var(--e-global-color-secondary);
+  padding: 15px 28px;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.custom-product-wrap .add-to-cart-wrap .add_to_cart_button:hover {
+  background-color: var(--e-global-color-primary);
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .boutique-products-grid .woocommerce ul.products.columns-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .boutique-products-grid .woocommerce ul.products.columns-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .boutique-products-grid .woocommerce ul.products.columns-4 {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .boutique-products-grid .woocommerce ul.products.columns-3 {
+    grid-template-columns: repeat(1, 100%);
+  }
+}
+/*
+.boutique-products-grid{
+    .woocommerce{
+        ul.products{
+            &:before,&:after{
+                display: none;
+            }
+            &.columns-4{
+                grid-template-columns: repeat(4, 1fr);
+            }
+            &.columns-3{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            display: grid;
+
+            grid-gap: 60px 20px;
+            margin-bottom: 0;
+
+            li{
+                padding: 4px 4px 20px;
+                transition: all 0.3s ease;
+                text-align: center;
+                margin: 0;
+                width: 100% !important;
+                float: none;
+
+                .onsale{
+                    display: none;
+                }
+
+                .woocommerce-LoopProduct-link{
+                    img{
+                        margin: 0;
+                        object-fit: cover;
+                    }
+                }
+
+                .woocommerce-loop-product__title{
+                    font-size: 20px;
+                    font-family: "Jost", Sans-serif;
+                    color: var(--e-global-color-primary);
+                    padding-block: 0;
+                    margin-block: 20px 10px;
+                }
+                .price{
+                    del{
+                        color: var(--e-global-color-secondary);
+                    }
+                    ins{
+                        color: var(--e-global-color-primary);
+                        font-size: 18px;
+                        font-weight: normal;
+                    }
+                }
+                .add_to_cart_button{
+                    font-size: 16px;
+                    background-color: var(--e-global-color-secondary);
+                    padding: 15px 32px;
+                    color: #fff;
+                    border-radius: 50px;
+                    text-decoration: none;
+                    font-weight: 600;
+                }
+                .added_to_cart{
+                    &.wc-forward{
+                        display: block;
+                        color: var(--e-global-color-primary);
+                    }
+                }
+                &:hover{
+                    background-color: var(--e-global-color-c0d75f6);
+                    // background-color: #F8EDEB;                    
+                }
+            }
+        }
+    }
+}
+*/
+.grid-cards-wrap .elementor-image-box-img {
+  display: flex;
+}
+.grid-cards-wrap .elementor-image-box-content {
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 12px 20px;
+}
+.grid-cards-wrap .elementor-image-box-content .elementor-image-box-title {
+  margin-top: 0;
+}
+.grid-cards-wrap .elementor-image-box-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.grid-cards-wrap .elementor-image-box-wrapper:hover .elementor-image-box-content {
+  transform: translateY(0);
+  z-index: 1;
+}
+
+.feature-articles a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=custom.css.map */
